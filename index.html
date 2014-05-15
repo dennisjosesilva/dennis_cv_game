@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Game - Dennis Jose da Silva's CV</title>
+		<script type="text/javascript" src="js/class.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+		<script type="text/javascript" src="js/scenario.js"></script>
+		<script type="text/javascript" src="js/hud.js"></script>
+		<script type="text/javascript" src="js/gameplay.js"></script>
+		<script type="text/javascript" src="js/intro.js"></script>
+		<script type="text/javascript" src="js/start.js"></script>
+		<script type="text/javascript" src="js/game-over.js"></script>
+		<script type="text/javascript" src="js/opening-scene.js"></script>
+		<script type="text/javascript" src="js/cv_game.js"></script>
+
+		<script type="text/javascript">
+			function window_load()
+			{
+				var game = new CVGame(document.getElementById("game"));
+				game.start();
+			}
+
+			window.onload = window_load;
+		</script>
+
+		<style type="text/css">
+			div#container{
+				margin: 0 auto;
+				width: 720px;				
+			}
+
+			body{
+				background-color: #000;
+			}
+
+			canvas#game{
+				background-color: #FFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<canvas id="game" style="width: 720px; height: 480px; border: solid 1px #000;" />		
+		</div>
+	</body>
+</html>
